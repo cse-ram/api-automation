@@ -6,12 +6,11 @@
     <test name="API Test">
         <groups>
             <run>
-                <include name="auth"/>
                 <include name="users"/>
             </run>
         </groups>
         <classes>
-            <class name="com.api.tests.auth.AuthServiceTest"/>
+            <class name="com.api.tests.users.UsersTest"/>
         </classes>
     </test>
 

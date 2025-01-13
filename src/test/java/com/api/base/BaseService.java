@@ -17,10 +17,6 @@ public class BaseService {
         RestAssured.filters(new LoggingFilter());
     }
 
-    protected void setAuthToken(String token) {
-        requestSpecification.get().header("Authorization", "Bearer " + token);
-    }
-
     protected Response getRequest(String endPoint) {
         return requestSpecification.get().get(endPoint);
     }

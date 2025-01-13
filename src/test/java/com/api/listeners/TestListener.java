@@ -21,8 +21,8 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        logger.info("Started...{}", result.getMethod().getMethodName());
-        logger.info("Description: {}", result.getMethod().getDescription());
+        logger.info("===============Started...{}", result.getMethod().getMethodName());
+        logger.info("===============Description: {}", result.getMethod().getDescription());
     }
 
     @Override
