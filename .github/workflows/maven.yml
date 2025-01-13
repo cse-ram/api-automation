@@ -35,4 +35,12 @@ jobs:
           test-output/reports/
           target/surefire-reports/
           logs/
+          
+    - name: Test Reporter
+      uses: dorny/test-reporter@v1.9.1
+      with:
+        name: TestNG Result
+        path: target/surefire-reports/junitreports/TEST-*.xml
+        reporter: java-junit
+          
     
