@@ -37,6 +37,7 @@ jobs:
           logs/
           
     - name: Test Reporter
+      if: always()
       uses: dorny/test-reporter@v1.9.1
       with:
         name: TestNG Result
