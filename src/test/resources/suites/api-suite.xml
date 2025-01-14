@@ -6,11 +6,11 @@
     <test name="API Test">
         <groups>
             <run>
-                <include name="users"/>
+                <include name="inventory"/>
             </run>
         </groups>
         <classes>
-            <class name="com.api.tests.users.UsersTest"/>
+            <class name="com.api.tests.inventory.InventoryTest"/>
         </classes>
     </test>
 

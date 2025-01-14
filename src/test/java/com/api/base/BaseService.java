@@ -28,4 +28,12 @@ public class BaseService {
     protected Response putRequest(Object payload, String endPoint) {
         return requestSpecification.get().contentType(ContentType.JSON).body(payload).put(endPoint);
     }
+
+    protected Response patchRequest(Object payload, String endPoint) {
+        return requestSpecification.get().contentType(ContentType.JSON).body(payload).patch(endPoint);
+    }
+
+    protected Response deleteRequest(String endPoint) {
+        return requestSpecification.get().contentType(ContentType.JSON).delete(endPoint);
+    }
 }
